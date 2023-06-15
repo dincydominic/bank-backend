@@ -1,0 +1,78 @@
+                   NODEjs:run tme environment + JS library
+                 --------------------------------------------
+
+-create client-server Application
+-featers
+  -extermly fast
+  -asynchronous and event driven
+  -single threaded
+  -highly sclable
+  -no buffering
+  -open source technology
+  - licenced by MIT
+-NODE JS CONCEPTS:
+--------------------
+ -MODULE
+-DEBUGGER
+-CONSOLE
+-CLUSTER
+-ADD-ONES
+-CALL BACK
+-CRYPTO
+-ERROR HANDLING
+-NET
+-GLOBAL
+-DOMAINS
+-DNS
+-STREAMING
+-BUFFUR
+
+NODE JS PARTS:
+  GLOBAL OBJECT
+  ----------------
+  -setTimeout(),console.log()
+  -modules:require('file')
+  ------------------
+     -Built In:
+        -fs 
+        -path
+        -process:enviornmental variable
+        -http
+        -https
+        -event emitter
+        -crypto
+      -userdefined:using module.exports for to exporting and require for import
+  -packages:npm 
+    -package.json:npm init -y
+    -node_modules
+    -package-lock.json
+-node backend concepts:
+  -client -server architecture
+     -server side
+     -http
+   -API
+   -CRUD
+   -RESTFULL API
+   -JSON
+   -CORS:cross origin resource sharing
+-Express:Framework of NODEjs
+  -Features
+    -fast,minimalist
+   -packages
+      -Express
+       -cros
+        -dotenv
+        -mongoose
+    -mongoose:elegant mongodb object modeling for node.js
+    -MIDDLEWARE:IS a function used to control request-response cycle
+      -to create a middleware
+         -function name(req,res,next){}
+      -types of middleware:
+       -application specific middleware
+         -eg:express.json()
+       -router specific middleware:work in specific routes  
+    -authorization :using JSONWETOKEN
+       -install jsonwebtoken:npm i jsonwebtoken
+       -using jsonwebtoken,generatte token in controller
+         -generate token:using sign(payload,secret)
+         -varify token in router specific middleware:verify(token,seceret)

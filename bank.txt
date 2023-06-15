@@ -1,0 +1,51 @@
+bank-back end
+--------------
+1.create folder
+2.generate package.json
+3.create index.js
+4..env file
+5.install packages
+  -express
+  -cors
+  -dotenv
+6.create .gitignore file
+7.update package.json script with start command
+8.start creating exprss server in index.js file
+  -import dotenv package
+  -import express
+  -import cors
+  -create express server
+  -setup port number to server
+  -use cors,json parse in server app
+  -run the server app in a specified port
+9.create database and collection in mongodb atlas,copy the connection STRing 
+10.paste collecetion string in .env file with password and database name
+11.define steps to connect node app with mongodb database
+   -create a db folder.define db connection ,create a connection.js file
+   -install mangoose:npm i mongoose
+   -import mongoos in connection.js file
+    -get connection string from .env file to connection.js file  
+          -get connection string from .env file:process.env
+    -Connect node app with mongodb using connection string with help of mongoogse
+    -import connection.js in index.js
+  12.define schema for model/collection in db 
+    -craete model folder,create userSchema.js file
+    -import mongoose userSchema.js file
+    -using mongoose ,define schema for users
+    -create a model /collection to store documents as given schenma
+      -(make sure model name should be plural smmal letter)
+  13.to define logic to resolve http request
+    -create a controller folder in server folde,create useraController.js file
+    -import model in userController.js file
+    -define and export logic to resolve diffrent http client request
+  14.create Routes to resolve client request
+     -create route folder ,create router.js file
+     -in router.js file
+             -import express
+             -create routes,using express.Router() class
+             -define routes to resolve http request
+                 -import controller
+            -export router
+        -import router in index.js file
+        -use router in server app ,aafter using json parser
+               
